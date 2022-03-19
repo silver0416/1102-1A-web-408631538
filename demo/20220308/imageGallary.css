@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title1 .title1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffa600e5;
+    padding-left: 50px;
+}
+.line3 img{
+    width: 30%;
+    margin: 1.4%;
+
+}
+/* .line4 img{
+    width: 21%;
+    margin: 0.8%;
+}
+.line5 img{
+    width: 16%;
+    margin: 0.4%;
+} */
