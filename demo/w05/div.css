@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body {
+    background-color: bisque;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    border: 2px solid purple;
+    margin: 20px auto;
+}
+
+.heading{
+    width:  100%;
+    height: 5.8rem;
+    background-color: darkcyan;
+    text-align: center;
+}
+.heading ul{
+    display: flex;
+    padding-left: 20px;
+    margin-top: 25px;
+    justify-content: flex-start;
+
+}
+.heading ul li{
+    list-style-type: none;
+    font-size: 0.9rem;
+    padding: 0px 5px 10px 5px;
+}
+.heading ul li a{
+    background-color:  darkgoldenrod;
+    padding: 5px;
+
+}
+.heading ul li a:hover{
+    background-color: blue;
+}
+
+.main{
+    display: flex;
+
+}
+.main aside{
+    width: 30%;
+    height: 300px;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+}
+.main section{
+    width: 90%;
+    height: 300px;
+    background-color: crimson;
+}
