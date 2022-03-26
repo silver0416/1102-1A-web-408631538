@@ -26,12 +26,13 @@ body {
     padding-left: 20px;
     margin-top: 25px;
     justify-content: flex-start;
-
+    
 }
 .heading ul li{
     list-style-type: none;
     font-size: 0.9rem;
     padding: 0px 5px 10px 5px;
+    
 }
 .heading ul li a{
     background-color:  darkgoldenrod;
@@ -48,14 +49,34 @@ body {
 }
 .main aside{
     width: 30%;
-    height: 300px;
+    height: 380px;
     background-color: darkslategray;
     display: flex;
     flex-direction: column;
 }
 .main section{
-    width: 90%;
-    height: 300px;
+    width: 42rem;
+    height: 380px;
     background-color: crimson;
-    display: flex;
+}
+
+.main ul{
+    padding-left: 20px;
+    margin-top: 25px;
+}
+.main ul li{
+    list-style-type: none;
+    font-size: 0.9rem;
+    padding: 10% 15% 10% 20%;
+    font-size: 20px;
+}
+.main ul li a{
+    background-color:  darkgoldenrod;
+    padding: 5px;
+}
+.main ul li a:hover{
+    background-color: blue;
+}
+.main section iframe{
+    padding: 5%;
 }
