@@ -49,14 +49,13 @@ body {
 }
 .main aside{
     width: 30%;
-    height: 380px;
+    height: 25rem;
     background-color: darkslategray;
     display: flex;
     flex-direction: column;
 }
 .main section{
-    width: 42rem;
-    height: 380px;
+    width: 80%;
     background-color: crimson;
 }
 
@@ -67,7 +66,7 @@ body {
 .main ul li{
     list-style-type: none;
     font-size: 0.9rem;
-    padding: 10% 15% 10% 20%;
+    padding: 8% 15% 10% 20%;
     font-size: 20px;
 }
 .main ul li a{
@@ -78,5 +77,5 @@ body {
     background-color: blue;
 }
 .main section iframe{
-    padding: 5%;
+    padding: 5% 5% 5% 5%;
 }
