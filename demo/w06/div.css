@@ -49,7 +49,6 @@ body {
 }
 .main aside{
     width: 30%;
-    height: 25rem;
     background-color: darkslategray;
     display: flex;
     flex-direction: column;
@@ -76,6 +75,16 @@ body {
 .main ul li a:hover{
     background-color: blue;
 }
-.main section iframe{
-    padding: 5% 5% 5% 5%;
+.video-responsive{
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video-responsive iframe{
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
