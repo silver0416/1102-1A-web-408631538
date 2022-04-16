@@ -19,3 +19,26 @@ function changeVideo(index){
             break;
     }
 }
+function changeColor(index){
+    const section = document.querySelector('.main section');
+    switch(index){
+        case 1:
+            section.style.backgroundColor = "yellow";
+            section.style.width = "60%";
+            section.style.padding = '0.5rem'
+            console.log('section style',section.style)
+            break
+        case 2:
+            section.style.backgroundColor = "purple";
+            section.style.width = "60%";
+            section.style.padding = '0.5rem'
+            console.log('section style',section.style)
+            break
+        case 3:
+            section.style.backgroundColor = "black";
+            section.style.width = "60%";
+            section.style.padding = '0.5rem'
+            console.log('section style',section.style)
+            break
+    }
+}
