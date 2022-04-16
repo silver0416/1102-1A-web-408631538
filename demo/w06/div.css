@@ -56,6 +56,7 @@ body {
 .main section{
     width: 80%;
     background-color: crimson;
+    padding: 0.7rem;
 }
 
 .main ul{
