@@ -110,4 +110,30 @@ body {
   width: 100%;
 }
 
+/**************************/
+/* RESPONSIVE DESIGN */
+/**************************/
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .section-hero .hero {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
 /*# sourceMappingURL=style.css.map */
