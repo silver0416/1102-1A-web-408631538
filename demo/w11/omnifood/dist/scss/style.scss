@@ -143,6 +143,14 @@ body {
     .hero{
       grid-template-columns: 1fr;
       gap: 8rem;
+      &-text-box,
+      &-img-box{
+        text-align: center;
+      }
+      &-img {
+        width: 60% ;
+
+      }
     }
   }
 }

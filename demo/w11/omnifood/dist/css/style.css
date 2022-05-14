@@ -128,6 +128,12 @@ body {
     grid-template-columns: 1fr;
     gap: 8rem;
   }
+  .section-hero .hero-text-box, .section-hero .hero-img-box {
+    text-align: center;
+  }
+  .section-hero .hero-img {
+    width: 60%;
+  }
 }
 /**************************/
 /* BELOW 704px (Smaller tablets) */
