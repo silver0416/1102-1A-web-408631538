@@ -32,12 +32,16 @@
 
 [w08](https://1102-1-a-web-408631538.vercel.app)
 
+## W12
+
+[w12_38_md](https://github.com/silver0416/1102-1A-web-408631538/blob/main/demo/md/w12.md)
+
+## W13
+
+[w13_38_md](https://github.com/silver0416/1102-1A-web-408631538/blob/main/demo/md/w13.md)
+
 # Exams
 
 ## Mid-Prep
 
 [w09-Mid-prep](https://1102-1-a-web-408631538.vercel.app/w06/div.html)
-
-## W12
-
-[w12_38_md](https://github.com/silver0416/1102-1A-web-408631538/blob/main/demo/md/w12.md)
