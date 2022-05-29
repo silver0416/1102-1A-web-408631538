@@ -52,8 +52,17 @@ body {
   font-weight: 400;
   color: #555;
 }
-.heading-primary{
-  font-family:'Rubik', sans-serif;
+
+.container{
+  max-width: 120rem;
+  margin:0 auto;
+  padding: 0 3.2rem;
+  column-gap:6.4rem;
+  row-gap: 9.6rem;
+}
+
+.heading-primary {
+  font-family: "Rubik", sans-serif;
   font-size: 5.2rem;
   font-weight: 700;
   letter-spacing: -0.05ps;
@@ -64,97 +73,123 @@ body {
 .btn {
   display: inline-block;
   padding: 1.6rem 3.2rem;
-  background-color: #e67e22 ;
+  background-color: #e67e22;
   color: #fff;
   border-radius: 9px;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
 
-  &-full{
+  &-full {
     background-color: #e67e22;
     color: #fff;
-    &:hover{
+    &:hover {
       background-color: #cf711f;
     }
   }
   &-outline {
     background-color: #fff;
     color: #555;
-    &:hover{
+    &:hover {
       background-color: #fdf2e9;
       box-shadow: inset 0 0 0 3px #fff;
     }
   }
 }
 //header
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+
   height: 9.6rem;
   padding: 0 4.8rem;
-  .logo{
+  position: relative;
+  .logo {
     height: 2.2rem;
   }
-  .main-nav{
-    &-list{
+  .main-nav {
+    &-list {
       display: flex;
       list-style: none;
       gap: 3.6rem;
     }
-    &-link{
+    &-link {
       display: inline-block;
       text-decoration: none;
       color: #333;
       font-size: 1.8rem;
       font-weight: 500;
-      &:hover{
-        color:#cf711f
+      &:hover {
+        color: #cf711f;
       }
     }
   }
 }
 
 //MOBILE
-.btn-mobile-nav{
+.btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
   display: none;
 }
-.icon-mobile-nav{
+.icon-mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
   color: #333;
 }
 
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 //Section Hero
-.section-hero{
+.section-hero {
   background-color: #fdf2e9;
   padding: 9.6rem 0;
-  .hero{
+  .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 9.6rem;
     align-items: center;
     max-width: 130rem;
     margin: 0 auto;
-    &-description{
+    &-description {
       font-size: 2rem;
       line-height: 1.6;
       margin-bottom: 4.8rem;
     }
-    &-img{
+    &-img {
       width: 100%;
     }
   }
 }
+//section-featured
+.section-featured{
+  .heading-featured-in{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    color: #888
+  }
+  .logos{
+    display: flex;
+    justify-content: space-around;
+    img{
+      height: 3.2rem;
+      filter: brightness(0)
+      opacity(0.5);
+    }
+  }
+}
+// section-how
+.section-how{
 
-
-
-
+}
 /**************************/
 /* RESPONSIVE DESIGN */
 /**************************/
@@ -173,7 +208,6 @@ body {
 /**************************/
 
 @media (max-width: 1200px) {
-  
 }
 
 /**************************/
@@ -181,24 +215,68 @@ body {
 /**************************/
 
 @media (max-width: 944px) {
-  .header{
-    .btn-mobile-nav{
+  .header {
+    .btn-mobile-nav {
       display: block;
     }
-    .main-nav{
-      display: none;
+    .main-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.97);
+      transform: translateX(100%);
+      transition: all 0.4s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+  
+      &-list{
+        flex-direction: column;
+      }
+      &-link{
+        font-size: 3rem !important;
+      }
+    }
+    &.nav-open{
+
+      .main-nav{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+      }
+
+      .icon-mobile-nav[name="close-outline"] {
+        display: block;
+      }
+      .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+      }
     }
   }
-  .section-hero{
-    .hero{
+  
+  .section-hero {
+    .hero {
       grid-template-columns: 1fr;
       gap: 8rem;
       &-text-box,
-      &-img-box{
+      &-img-box {
         text-align: center;
       }
       &-img {
-        width: 60% ;
+        width: 60%;
+      }
+    }
+  }
+  .section-featured{
+    .logos{
+      img{
+        height: 2.4rem;
       }
     }
   }
