@@ -71,6 +71,22 @@ body {
   line-height: 1.05;
 }
 
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #cf711f;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
 .btn {
   display: inline-block;
   padding: 1.6rem 3.2rem;
@@ -180,6 +196,52 @@ body {
   filter: brightness(0) opacity(0.5);
 }
 
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  background-color: #fdf2e9;
+  align-items: center;
+}
+.section-testimonials .testimonials-container {
+  padding: 9.6rem;
+}
+.section-testimonials .testimonials-container .testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  row-gap: 4rem;
+}
+.section-testimonials .testimonials-container .testimonials .testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+}
+.section-testimonials .testimonials-container .testimonials .testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.section-testimonials .testimonials-container .testimonials .testimonial-name {
+  font-size: 1.6;
+  color: #6f6f6f;
+}
+.section-testimonials .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.section-testimonials .gallery-item {
+  overflow: hidden;
+}
+.section-testimonials .gallery img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+.section-testimonials .gallery img:hover {
+  transform: scaleX(1.1);
+}
+
 /**************************/
 /* RESPONSIVE DESIGN */
 /**************************/
@@ -246,6 +308,13 @@ body {
   .section-featured .logos img {
     height: 2.4rem;
   }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .section-testimonials .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 /**************************/
 /* BELOW 704px (Smaller tablets) */
@@ -253,5 +322,16 @@ body {
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
+@media (max-width: 34em) {
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .section-testimonials .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section-testimonials .testimonials-container .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
