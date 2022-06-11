@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>叭噗ㄉ快樂冷凍庫 </title>
+  </head>
+  <body>
+    <header>
+      
+      叭噗ㄉ快樂冷凍庫
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#" class="main-nav-link"> 關於我 </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link"> BOTPu </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link"> 奇怪的隨手拍 </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"> </ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"> </ion-icon>
+      </button>
+    </header>
+    <main>
+      <!-- random background image -->
+      <div class="BGImg">
+        
+      </div>
+
+      <!-- Discord chat room -->
+      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"></script>
+
+      <script>
+        const button = new Crate({
+          server: "659402209972453407",
+          channel: "659402210420981771",
+        });
+
+        button.notify("在這裡可以直接對話\n試用看看BOTPu吧");
+      </script>
+    </main>
+    <footer></footer>
+    <script src="/20220319/demo/Final_Project/js/random_image.js"></script>
+  </body>
 </html>
