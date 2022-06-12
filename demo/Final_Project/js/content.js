@@ -1,6 +1,6 @@
-function change(index){
+function change(index) {
     const p = document.querySelector('.show-content')
-    switch(index){
+    switch (index) {
         case 0:
             p.innerHTML = `<iframe src="./resume.html" width="100%" height="100%"/>`
             break
