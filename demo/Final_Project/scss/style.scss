@@ -10,41 +10,39 @@ body {
   font-weight: 400;
   color: #555;
 }
-header {
+.header {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   background-color: #ffe100;
   height: 4.5rem;
   padding: 0 4.8rem;
   position: relative;
-  
+
   .header-icon {
     max-width: 800px;
-    
+
     img {
       width: 155px;
       height: 45px;
     }
   }
   .main-nav {
-    
     &-list {
       display: flex;
       list-style: none;
       gap: 3.6rem;
-      
     }
-    &-btn{
-        height: 4.5rem;
-        &:hover {
-            background-color: #8a7c29;
-        }
+    &-btn {
+      height: 4.5rem;
+      &:hover {
+        background-color: #8a7c29;
+      }
     }
-    &-font{
-        font-family: 'DFPYuanBold-B5';
-        font-size: 2.0rem;
-        padding-top: 1.2rem;
+    &-font {
+      font-family: "DFPYuanBold-B5";
+      font-size: 2rem;
+      padding-top: 1.2rem;
     }
     &-link {
       display: inline-block;
@@ -52,7 +50,7 @@ header {
       color: #333;
       font-size: 1.8rem;
       font-weight: 500;
-      
+
       &:hover {
         color: #ffffff;
       }
@@ -74,3 +72,78 @@ header {
   .icon-mobile-nav[name="close-outline"] {
     display: none;
   }
+
+@media (max-width: 1344px) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 1200px) {
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 944px) {
+  .btn-mobile-nav {
+    display: block;
+  }
+  header {
+    .main-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.97);
+      transform: translateX(100%);
+      transition: all 0.4s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      
+      &-list {
+        flex-direction: column;
+      }
+      &-link {
+        font-size: 3rem !important;
+      }
+    }
+    &.nav-open {
+      .main-nav {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+      }
+
+      .icon-mobile-nav[name="close-outline"] {
+        display: block;
+      }
+      .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+      }
+    }
+  }
+
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+}
