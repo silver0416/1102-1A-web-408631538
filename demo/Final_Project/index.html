@@ -16,21 +16,21 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a href="#" class="main-nav-link">
+            <a href="#resume" class="main-nav-link">
               <div class="main-nav-btn" onclick="change(0)">
                 <h2 class="main-nav-font">關於我</h2>
               </div>
             </a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">
+            <a href="#BOTPu" class="main-nav-link">
               <div class="main-nav-btn" onclick="change(1)">
                 <h2 class="main-nav-font">BOTPu</h2>
               </div>
             </a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">
+            <a href="#gallery" class="main-nav-link">
               <div class="main-nav-btn" onclick="change(2)">
                 <h2 class="main-nav-font">奇怪的隨手拍</h2>
               </div>
@@ -52,10 +52,6 @@
     </header>
     <main>
       <section class="section-hero">
-        <!-- random background image -->
-        <!-- <div class="hero-BGImg">
-          
-        </div> -->
         <!-- show-content -->
         <body class="hero-body" onload="putRandomBGImage()">
           <div class="hero">
@@ -68,10 +64,27 @@
           </div>
         </body>
       </section>
-      <section class="resume"></section>
-      
-      <section class="BOTPu"></section>
-      <section class="gallary"></section>
+      <section class="resume" id = resume>
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">我是誰</h1>
+            <h3 class="hero-description">
+              
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="BOTPu" id = BOTPu>
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">BOTPu是什麼?</h1>
+            <h3 class="hero-description">
+              當我在整理相簿時，發現了高達28張不同的Windows藍螢幕，讓我想起了我竟然曾經能忍受每隔三天就來一次藍螢幕長達三個多月的日子，直到我送修了記憶體
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id = gallery></section>
 
       <!-- Discord chat room -->
       <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"></script>

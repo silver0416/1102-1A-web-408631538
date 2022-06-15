@@ -122,6 +122,20 @@ body {
   line-height: 1.05;
 }
 
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe100;
+  height: 4.5rem;
+  padding: 0 4.8rem;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
