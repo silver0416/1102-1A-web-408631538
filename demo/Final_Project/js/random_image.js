@@ -1,4 +1,4 @@
-path = "./media/"
+path = "./media/hero/"
 path_BOTPu = "./media/spg/"
 
 
