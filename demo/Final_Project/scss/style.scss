@@ -58,20 +58,79 @@ body {
   }
 }
 .btn-mobile-nav {
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  background-color: #e67e22;
+  color: #fff;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+
+  &-full {
+    background-color: #e67e22;
+    color: #fff;
+    &:hover {
+      background-color: #cf711f;
+    }
   }
-  .icon-mobile-nav {
-    height: 4.8rem;
-    width: 4.8rem;
-    color: #333;
+  &-outline {
+    background-color: #fff;
+    color: #555;
+    &:hover {
+      background-color: #fdf2e9;
+      box-shadow: inset 0 0 0 3px #fff;
+    }
   }
-  
-  .icon-mobile-nav[name="close-outline"] {
-    display: none;
+}
+
+.hero {
+  font-family: "DFPYuanBold-B5", sans-serif;
+  background-color: #fffffdc8;
+  padding: 9.6rem 0;
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+    max-width: 130rem;
+    margin: 0 auto;
+    
   }
+  &-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+  &-BGImg {
+    &-img{
+      width: 100%;
+    }
+  }
+}
+.heading-primary {
+  font-family: "DFPYuanBold-B5", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 750;
+  margin-bottom: 3.2rem;
+  line-height: 1.05;
+}
 
 @media (max-width: 1344px) {
 }
@@ -80,7 +139,11 @@ body {
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
 
-@media (max-width: 1200px) {
+@media (max-width: 1094px) {
+  .main-nav-font {
+    font-size: 1.3rem !important;
+    padding-top: 1.75rem !important;
+  }
 }
 
 /**************************/
@@ -107,12 +170,16 @@ body {
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
-      
+
       &-list {
         flex-direction: column;
       }
       &-link {
         font-size: 3rem !important;
+      }
+      &-font{
+        font-size: 2rem !important;
+        padding-top: 1.2rem !important;
       }
     }
     &.nav-open {
@@ -131,7 +198,6 @@ body {
       }
     }
   }
-
 }
 
 /**************************/
