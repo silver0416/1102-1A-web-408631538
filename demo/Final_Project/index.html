@@ -8,9 +8,9 @@
     <title>我的個人網頁</title>
   </head>
 
-  <body>
+  <body onload="putRandomBGImage()">
     <header class="header nav-open">
-      <a class="header-icon" href="./"
+      <a class="header-icon" href="#hero"
         ><img src="./media/icon.webp" alt=""
       /></a>
       <nav class="main-nav">
@@ -51,40 +51,38 @@
       </button>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id = hero>
         <!-- show-content -->
-        <body class="hero-body" onload="putRandomBGImage()">
-          <div class="hero">
-            <div class="hero-text-box">
-              <h1 class="heading-primary">為什麼是這張背景?</h1>
-              <h3 class="hero-description">
-                當我在整理相簿時，發現了高達28張不同的Windows藍螢幕，讓我想起了我竟然曾經能忍受每隔三天就來一次藍螢幕長達三個多月的日子，直到我送修了記憶體
-              </h3>
-            </div>
-          </div>
-        </body>
-      </section>
-      <section class="resume" id = resume>
         <div class="hero">
           <div class="hero-text-box">
-            <h1 class="heading-primary">我是誰</h1>
-            <h3 class="hero-description">
-              
-            </h3>
-          </div>
-        </div>
-      </section>
-      <section class="BOTPu" id = BOTPu>
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">BOTPu是什麼?</h1>
+            <h1 class="heading-primary">為什麼是這張背景?</h1>
             <h3 class="hero-description">
               當我在整理相簿時，發現了高達28張不同的Windows藍螢幕，讓我想起了我竟然曾經能忍受每隔三天就來一次藍螢幕長達三個多月的日子，直到我送修了記憶體
             </h3>
           </div>
         </div>
       </section>
-      <section class="gallery" id = gallery></section>
+      <section class="section-resume" id="resume">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">我是誰</h1>
+            <h3 class="hero-description"></h3>
+          </div>
+        </div>
+      </section>
+      <section class="section-BOTPu" id="BOTPu">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">BOTPu是什麼?</h1>
+            <h3 class="hero-description">
+              BOTPu是一個我用python寫的Discord聊天機器人。<br>
+              將它加入伺服器，可以讓你直接於Discord伺服器聊天室中搜尋梗圖庫。<br>
+              另外還有更多功能...
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="section-gallery" id="gallery"></section>
 
       <!-- Discord chat room -->
       <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"></script>
