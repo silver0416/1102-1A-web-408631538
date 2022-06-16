@@ -20,14 +20,14 @@ function putRandomBGImage() {
     section_hero.style.backgroundImage = "url("+random()+")";
     section_hero.style.backgroundAttachment = 'fixed';
     section_hero.style.backgroundSize = '100% 100%';
-    // //section_resume
-    // var section_resume = document.querySelector('.section-resume');
-    // section_resume.style.backgroundImage = "url("+random()+")";
-    // section_resume.style.backgroundAttachment = 'fixed';
-    // section_resume.style.backgroundSize = '100% 100%';
-    //section_BOTPu
+    //section_resume
+    var section_resume = document.querySelector('.section-resume');
+    section_resume.style.backgroundColor = '#ffe100';
+    //section-BOTPu
     var section_BOTPu = document.querySelector('.section-BOTPu');
     section_BOTPu.style.backgroundImage = "url("+random_BOTPu()+")";
     section_BOTPu.style.backgroundAttachment = 'fixed';
     section_BOTPu.style.backgroundSize = '100% 100%';
+    var section_BOTPu_description = document.querySelector('.section-BOTPu-description');
+    section_BOTPu_description.style.backgroundColor = '#ffe100';
 }
