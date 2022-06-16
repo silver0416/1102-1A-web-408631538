@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>我的個人網頁</title>
   </head>
 
@@ -51,7 +59,7 @@
       </button>
     </header>
     <main>
-      <section class="section-hero" id = hero>
+      <section class="section-hero" id="hero">
         <!-- show-content -->
         <div class="hero">
           <div class="hero-text-box">
@@ -63,26 +71,101 @@
         </div>
       </section>
       <section class="section-resume" id="resume">
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">我是誰</h1>
-            <h3 class="hero-description"></h3>
+        <div class="hero resume">
+          <div class="hero-text-box resume-text-box">
+            <h1 class="heading-primary">關於我</h1>
+            <h3 class="hero-description resume-description">
+              目前就讀淡江大學資管系<br>
+              擅長程式語言:JAVA、Python <br>
+              
+            </h3>
           </div>
         </div>
       </section>
       <section class="section-BOTPu" id="BOTPu">
-        <div class="hero">
-          <div class="hero-text-box">
+        <div class="BOTPu">
+          <div class="BOTPu-text-box">
             <h1 class="heading-primary">BOTPu是什麼?</h1>
-            <h3 class="hero-description">
-              BOTPu是一個我用python寫的Discord聊天機器人。<br>
-              將它加入伺服器，可以讓你直接於Discord伺服器聊天室中搜尋梗圖庫。<br>
+            <h3 class="BOTPu-description BOTPu-description-box">
+              BOTPu是一個我用python寫的Discord聊天機器人。<br />
+              將它加入伺服器，可以讓你直接於Discord伺服器聊天室中搜尋梗圖庫。<br />
+              包含高達2000張的海綿寶寶圖庫! <br />
               另外還有更多功能...
             </h3>
           </div>
-          
-        </div>
+
+          <div class="btn-box">
+            <a
+              href="https://discord.com/api/oauth2/authorize?client_id=819206506003824652&permissions=8&scope=bot"
+              class="btn btn-full"
+              >立即加入</a
+            >
+          </div>
       </section>
+      <section class="section-BOTPu-description" >
+        <div class="BOTPu-description BOTPu">
+          <h2 class="BOTPu-description-title">BOTPu功能演示</h2>
+          <div class="section-how">
+            <div class="container grid grid--2-cols">
+              <!-- STEP 01 -->
+              <div class="step-text-box">
+                <p class="step-number">方法1</p>
+                <h3 class="heading-tertiary">
+                  直接輸入完整台詞!
+                </h3>
+                <p class="step-description">
+                  機器人會直接回傳相對應的圖片
+                </p>
+              </div>
+              <div class="step-img-box">
+                <img
+                  src="./media/BOTPu/react.png"
+                  class="step-img"
+                  alt=""
+                />
+              </div>
+              <!-- STEP 02 -->
+              <div class="step-img-box">
+                <img
+                  src="./media/BOTPu/search_keyword.png"
+                  class="step-img"
+                  alt=""
+                />
+              </div>
+              <div class="step-text-box">
+                <p class="step-number">方法2</p>
+                <h3 class="heading-tertiary">模糊台詞</h3>
+                <p class="step-description">
+                  不確定完整台詞是什麼嗎?只需要輸入"海綿(空格)(關鍵字)"就能幫你找到最接近的台詞喔
+                </p>
+              </div>
+              <!-- STEP 02 EXT-->
+              <div class="step-text-box-ext">
+                <h3 class="heading-tertiary">更多類似台詞</h3>
+                <p class="step-description">
+                  搜尋關鍵字，若有其他類似結果也會一併顯示在下方
+                </p>
+              </div>
+              <div class="step-img-box-ext">
+                <img
+                  src="./media/BOTPu/search_result.png"
+                  class="step-img-ext"
+                  alt=""
+                />
+              </div>
+            </div>
+      </div>
+      
+      </div>
+      </section>
+
+
+      <section class="section-how" id="how">
+        
+      </section>
+
+
+
       <section class="section-gallery" id="gallery"></section>
 
       <!-- Discord chat room -->
