@@ -314,6 +314,55 @@ body {
     width: 35%;
   }
 }
+.section-minmax{
+  padding: 10rem;
+  margin: 5rem 0;
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding: 2rem;
+    gap: 1.2rem;
+    &-item{
+      img{
+        width: 100%;
+      }
+    }
+    
+  }
+}
+.section-imgal{
+  padding: 10rem;
+  margin: 5rem 0;
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding: 2rem;
+    gap: 1.2rem;
+    &-card{
+      background-color: #fdf2e9;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      img{
+        width: 100%;
+      }
+      .title{
+        text-align: center;
+        padding: 1rem;
+      }
+      .description{
+        margin: 2rem;
+      }
+      .btn-card{
+        display: block;
+        width: 60%;
+        margin: 1.5rem auto;
+        padding: 0.3rem 0.6rem;
+        background-color: #ebceb5;
+        color: #333;
+      }
+    }
+  }
+}
 /**************************/
 /* RESPONSIVE DESIGN */
 /**************************/
