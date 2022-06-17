@@ -1,5 +1,6 @@
 path = "./media/hero/"
 path_BOTPu = "./media/spg/"
+path_gallery = "./media/galleryForBG/"
 
 
 function random(){
@@ -13,6 +14,13 @@ function random_BOTPu(){
     var url = (path_BOTPu + i + ".png");
     return url
 }
+
+function random_gallery(){
+    i = Math.floor(Math.random() * 10 + 1);
+    var url = (path_gallery + i + ".png");
+    return url
+}
+
 
 function putRandomBGImage() {
     //section_hero
@@ -30,4 +38,11 @@ function putRandomBGImage() {
     section_BOTPu.style.backgroundSize = '100% 100%';
     var section_BOTPu_description = document.querySelector('.section-BOTPu-description');
     section_BOTPu_description.style.backgroundColor = '#ffe100';
+    //section-gallery
+    var section_gallery = document.querySelector('.section-gallery');
+    section_gallery.style.backgroundImage = "url("+random_gallery()+")";
+    section_gallery.style.backgroundAttachment = 'fixed';
+    section_gallery.style.backgroundSize = '100% 100%';
+    var section_gallery_box = document.querySelector('.section-gallery-box');
+    section_gallery_box.style.backgroundColor = '#ffe100';
 }
