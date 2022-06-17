@@ -355,6 +355,10 @@ body {
   .step-number {
     font-size: 4rem !important;
   }
+
+  .gallery-text-box {
+    padding-right: 3rem;
+  }
 }
 @media (max-width: 1019px) {
   .hero-text-box {
@@ -426,6 +430,10 @@ body {
 
   .step-number {
     font-size: 3rem !important;
+  }
+
+  .gallery-text-box {
+    padding-right: 2rem;
   }
 }
 /**************************/
